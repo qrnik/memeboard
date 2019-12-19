@@ -1,7 +1,17 @@
 language: python
 before_install:
-  - pip install pipenv
+- pip install pipenv
 install:
-  - pipenv install
+- pipenv install
 script:
-  - pytest
+- pytest
+deploy:
+  provider: elasticbenastalk
+  access_key_id:
+    secure: Jx6swjJWSfsIes4VdpWE78gw5pqrXyUlS0BoH8Zg55ZNAslJHwQnzTcqAXBYQuBcUjyKnivAh4+kKU1bOt2Z+lroruFv4sJKny27WykHRnFPXZfmboiJDX32VXHad/cZ/+LI+UX8IK+qTENQz5dFa+4D3svk9QhLKE/mX5iwZWddc0AsUf9YzJePAcufzIDnx5Xn5svZig3g3xIfrRQVZLG5Lz2E1N+5UzRlO6auBTvRcf01UctXlv+cxnTl3mvKhe1hxOIHcIMF8yR+f+TXDkU8BRIJ6dm2z/5SrvYZYwMkfNqu10BuSGeLPLw1oyUpCsLEtQCr7hywQzzguLGdufs9BPpIUpZTd27gu+eDXfUay6gRazhXQ6YKcq4r6kGZIS00yHDbDndoTfaMTV9VAlLj/L53Xaf2K4yRQ/SCsredwPIJYsS8kOXJjSHae7jq06HS+8TYIr7e9LSwLOP3GI/+l5ayRkAVKpbtsaXfdf5d27Hr3BtwZfnBURbPhgddCgUrsvP4Lj3J4M+4Ofjw2h/Sr1N/VwQhWTiYTiKgBcQpMpIIf2fy054LD2+cnAu5luIi6gKIDUcqAdpBqE5nLXc9aHY/IWRT1Bi0k5yPJxEPo1SoK6Zyy0nxTH1AyL2SSlsaYXpjZaSAI7pKmJrjsv3cF5mYOyO+0r+8EfKx0As=
+  secret_access_key:
+    secure: fGbk7s/TFNr/Cq/5CI4JPNfVoevcKvKOdbV/COuE+th0jLwMH7m1AaeHA93lUeru2HOC3dj5a2ncaOkz3HPxIogpXb5u2LuJ2Gc1Eyrov+mBFw7apIBKbF79Hm1gDE87EtH0JxMg9PfjQJxi0i+/uHh2ccMDUK4kmzX20jpl9FBb5Uz8isvQXCA6/D0HyIpeF5TgzlUp84jMceYoKKIGLcJ2fR9lm+bRXxhhAtpTC6KRAGjUctG3WiIB6+QkfRDOQqTpveAyl7aw0RDIbK17bOLnBo1F8bgyojvZbW2Mqr8Nu2CNvYm7CKD7zN8Di6WgW0qWcU7299n/F/2vf0z5mGzRv4MJDi9RMgggnYAcKgPxZxAhNSAAHi8NimSQ7Fv3KI2XSWaQii3qeONc6HMOT04dKtSijrhAoONWH+VfypV8bNKxaHCnWtaSYJQtBOaoXtWPIJl3Ucw9QQRkpiqO6V+1cbRNAdj0krhO0pYVm6hDK+ax9RnIaYrJjlx0RL6gA/dI3fJVHY4G4zkHsD/N+SyyQJM8K+Fkp8lOVzw+z3tG7sp/jHSwPLhJ/TM0Dn+HEH4ujVScFn61S1e3sgQrAVJfLCrubV+NP/WdlW52qrAqhhPk2wl8Q3QnNNwceJLDsIxL8tECOyeEZk+8kcMIKZ7VH6QB6pXGtpC5b1RtjFc=
+  region: "eu-central-1"
+  app: "wamej"
+  env: "default"
+  bucket_name: "elasticbeanstalk-eu-central-1-752947014601"
