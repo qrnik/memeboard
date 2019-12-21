@@ -1,8 +1,8 @@
 language: python
 before_install:
 - pip install pipenv
-install:
-- pipenv install
+- pipenv sync
+- pipenv run pip freeze > requirements.txt
 script:
 - pytest
 deploy:
