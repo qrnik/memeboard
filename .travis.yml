@@ -3,6 +3,7 @@ before_install:
 - pip install pipenv
 - pipenv sync
 - pipenv run pip freeze > requirements.txt
+- git add requirements.txt
 script:
 - pytest
 deploy:
