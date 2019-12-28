@@ -9,7 +9,7 @@ def rds_db_uri():
     hostname = os.environ.get('RDS_HOSTNAME')
     port = os.environ.get('RDS_PORT')
     db_name = os.environ.get('RDS_DB_NAME')
-    return f"postgresql://{username}:{password}@{hostname}:{port}/{db_name}"
+    return f"mysql://{username}:{password}@{hostname}:{port}/{db_name}"
 
 
 class Config:
