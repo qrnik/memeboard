@@ -5,9 +5,15 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+pyopenssl = "*"
 
 [packages]
 flask = "*"
+flask-login = "*"
+requests = "*"
+authlib = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
 
 [requires]
 python_version = "3.6"
