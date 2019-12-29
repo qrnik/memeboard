@@ -15,6 +15,7 @@ authlib = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 mysqlclient = "*"
+flask-admin = "*"
 
 [requires]
 python_version = "3.6"

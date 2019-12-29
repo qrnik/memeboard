@@ -9,6 +9,7 @@ class Config:
     GOOGLE_CLIENT_SECRET = os.environ.get('GOOGLE_CLIENT_SECRET')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
+    FLASK_ADMIN_SWATCH = 'superhero'
 
 
 class DevelopmentConfig(Config):
