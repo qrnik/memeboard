@@ -3,15 +3,6 @@ import os
 from flask import Flask
 
 
-def rds_db_uri():
-    username = os.environ.get('RDS_USERNAME')
-    password = os.environ.get('RDS_PASSWORD')
-    hostname = os.environ.get('RDS_HOSTNAME')
-    port = os.environ.get('RDS_PORT')
-    db_name = os.environ.get('RDS_DB_NAME')
-    return f"mysql://{username}:{password}@{hostname}:{port}/{db_name}"
-
-
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
     GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
@@ -25,7 +16,7 @@ class DevelopmentConfig(Config):
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = rds_db_uri()
+    pass
 
 
 class TestConfig(Config):
