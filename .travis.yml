@@ -15,5 +15,5 @@ deploy:
     secure: "aiwGUVfFyiG5Ep1Awgt+bKnDpgzsx6UaUg2goQM0Rv2079VnWjIybfM7F6U9zynjOu/Up3q31oSeLnTeyoouGm8lQlERnNgLVMf1Qdho3JrZ3ZUgdQQVDMUlI/XTL8hZUe4LgrDa1cNzIHOUkWA0wnuiqPEHdUvvHv3uzi2fceaBNdxJnGd98HijIrrjuILEw647+7grc52OhvTvaUHWTBw8O3kjYN3oDmcLOrCx/nNRcEucQDdkLjzupARci3yVC/2KpI+wbXFcBKaJjuLMnFxjtu2vs+HdsLYQ7+qTnH6feYjijbJclXuULwgRW1m46gMHo9NtWkjzK1GFsIxe7lMcp4neJCDqmYYBqouAcu7R+DuzybCgxNxqndVWIGKofs8cB3LJptM3sFf7hlvPJIuQX+uPiE2V/axm+M0sPa9/sIEcv24HdVPe+iUc1J37nvb4oPaGtDBORlhSzjzGiC9ZvhPKIVuDvF9Susq7hcKoUBDR620qCpotsNdqP+XwZIUkNljtkmKoqXYBEv17KbF+bKX/aiJSgSI5VEKVlMceb8fjx4EGpbMM3G8BUBrCNZEqYwyDNuA75G7oc6SEv1FjZzf5GVXMvyadEkbsFT+hafY8sElyo1nP7cOjKhGzzYgEWZ7GT6wuoBjkV79durPfQ5Apx8Ypa/tgdLe55RA="
   region: "eu-central-1"
   app: "wamej"
-  env: "default"
+  env: "wamej-env"
   bucket_name: "elasticbeanstalk-eu-central-1-752947014601"
